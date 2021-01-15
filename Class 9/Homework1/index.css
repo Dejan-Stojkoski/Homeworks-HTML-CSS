@@ -1,0 +1,77 @@
+body{
+    width: 900px;
+}
+div{
+    display: inline-block;
+    margin: 5px;
+}
+div.main {
+    width: 800px;
+    border: 1px solid #3d3b3b;
+    background-color: #3d3b3b;
+    position: relative;
+    height: 682px;
+}
+
+.one{
+    position: absolute;
+    left: 0;
+    border: 1px solid #f5f5c1;
+    background: #f5f5c1;
+    height: 200px;
+    width: 200px;
+
+
+}
+.two{
+    position: absolute;
+    right: 0;
+    border: 1px solid red;
+    background: red;
+    height: 500px;
+    width: 575px;
+}
+.three {
+    position: absolute;
+    left: 0;
+    top: 240px;
+    border: 1px solid #f5f5c1;
+    background: #f5f5c1;
+    height: 260px;
+    width: 200px;
+}
+.four {
+    position: absolute;
+    top: 520px;
+    border: 1px solid #5a85d6;
+    background: #5a85d6;
+    height: 150px;
+    width: 200px;
+}
+.five {
+    position: absolute;
+    top: 520px;
+    left: 218px;
+    border: 1px solid #f5f5c1;
+    background: #f5f5c1;
+    height: 150px;
+    width: 540px;
+}
+.six {
+    position: absolute;
+    top: 520px;
+    right: 0;
+    border: 1px solid #f5f5c1;
+    background: #f5f5c1;
+    height: 60px;
+    width: 20px;
+}
+.seven {
+    position: absolute;
+    top: 610px;
+    right: 0;
+    border: 1px solid yellow;
+    background: yellow;
+    height: 60px;
+    width: 20px;
+}

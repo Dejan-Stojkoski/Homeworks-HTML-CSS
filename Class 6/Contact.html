@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <header id="top">
+        <h1>Contact</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="./Home.html">Home</a></li>
+            <li><a href="./AboutUs.html">About Us</a></li>
+            <li><a href="./Products.html">Products</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
+            <form action="" method="">
+                <label for="search">Search:</label>
+                <input type="search" name="search" id="search" placeholder="Search this site">
+                <input type="submit" value="Go!">
+            </form>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <img src="./Images/ContactMap.jpg" alt="Contact" usemap="#contactmap">
+
+            <map name="contactmap">
+                <area shape="rect" coords="116,78,180,144" href="#phone">
+                <area shape="rect" coords="211,87,284,141" href="mailto:yamaha@example.com">
+                <area shape="circle" coords="343,111,30" href="https://europe.yamaha.com/en/products/musical_instruments/">
+            </map>
+        </section>
+
+        <section id="phone">
+            <h5>Contact Us:</h5>
+            <strong>Due to the rapidly evolving global situation, our customer support call center is currently experiencing high call volumes. We truly appreciate your patience, and we will respond to your request as quickly as we can. In the current situation, chat is probably the best option for a prompt response.</strong>
+        </section>
+        <br/><br/>
+
+        <section>
+            <fieldset>
+            <legend>SCHEDULE APPOINTMENT</legend>
+            <form action="" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your full name..."/> 
+                <br/>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email..."/>
+                <br/>
+                <label for="date">Date:</label>
+                <input type="text" name="date" id="date" placeholder="Date..."/>
+                <br/>
+                <label for="time">Time:</label>
+                <select name="time" id="time">
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="" selected disabled>Choose time</option>
+                </select>
+                    <br/>
+                    <textarea name="additional" id="additional" cols="30" rows="5" placeholder="Additional Message..."></textarea>
+                    <br/>
+                    <input type="submit" value="Submit"/>
+                    <input type="reset" value="Reset"/>
+            </form>
+        </fieldset>
+        </section>
+        <div>
+            <a href="#top"><img src="./Images/UpArrow.png" alt="Up Arrow" height="20px"></a>
+        </div>
+    </main>
+    <footer> &copy; Yamaha Corporation. All rights reserved.</footer>
+
+</body>
+</html>

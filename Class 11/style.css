@@ -1,0 +1,93 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h3{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+p{
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background: rgb(230, 223, 223);
+    border-radius: 6px;
+    padding: 2%;
+    margin: 0;
+}
+div{
+    background: white;
+    margin: 3%;
+    border-radius: 5px;
+    min-height: 130px;
+    padding: 2%;
+}
+.sideBar{
+    width: 100px;
+    position: relative;
+    left: 35%;
+    margin: 0%;
+}
+
+@media screen and (min-width:400px) and (max-width: 900px){
+    .container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    div{
+        width: 40%;
+    }
+    .sideBar{
+        position: relative;
+        width: 40%;
+        left: 30%;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width:1000px){
+    .container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    div{
+        margin: 1%;
+        width: 20%;
+    }
+    .sideBar{
+        position: relative;
+        left: 35%;
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    body{
+        display: inline-block;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+        margin-right: 0px;
+        float: left;
+    }
+    div{
+        margin: 1%;
+        width: 20%;
+    }
+    .sideBar{
+        width: 10%;
+        position: unset;
+        float: left;
+    }
+}

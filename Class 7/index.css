@@ -1,0 +1,47 @@
+body {
+    font-family: 'Andika New Basic', sans-serif;
+    color: #111111;
+}
+h1 {
+    background-color: #219cd1;
+    color:  #00ffb3;
+    text-transform: none;
+    word-spacing: 10px;
+}
+.ar1 {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #efefef;
+    opacity: 1;
+    text-shadow: 1px 2px darkblue;
+}
+.ar2 {
+    font-family: 'Padauk', sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.ar3 {
+    font-family: 'Bungee Outline', cursive;
+    font-size: x-large;
+}
+.three {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 150%;
+}
+.three::first-line {
+    color: darksalmon;
+    text-decoration: overline;
+}
+footer {
+    text-decoration: underline overline;
+    text-decoration-style: wavy;
+}
+footer::first-letter {
+    color: rgb(255, 0, 0);
+}
+.imgClass {
+    font-style: italic;
+    text-align: center;
+    vertical-align: middle;
+}

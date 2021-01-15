@@ -1,0 +1,182 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+div{
+    border: 1px solid white;
+    border-radius: 6px;
+    overflow: auto;
+    background: white;
+    margin: 10% 2% 10% 2%;
+    width: 95%;
+    height: 150px;
+    display: inline-block;
+}
+
+h3{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+}
+.nine{
+    margin-bottom: 2%;
+}
+
+.container{
+    border: 1px solid rgb(226, 218, 218);
+    border-radius: 6px;
+    background: rgb(226, 218, 218);
+    margin-top: 2%;
+    height: 100%;
+    width: 100%;
+}
+
+
+@media screen and (min-width: 450px) and (max-width:900px){
+    div{
+        width: 45%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .container{
+        width: 100%;
+        clear: both;
+    }
+    .one{
+        float: left;
+    }
+    .two{
+        float: left;
+    }
+    .three{
+        clear: left;
+        float: left;
+    }
+    .four{
+        float: left;
+    }
+    .five{
+        clear: left;
+        float: left;
+    }
+    .six{
+        float: left;
+    }
+    .seven{
+        clear: left;
+        float: left;
+        margin-bottom: 20px;
+    }
+    .eight{
+        float: left;
+        margin-bottom: 20px;
+    }
+    .nine{
+        position: relative;
+        bottom: 0%;
+        left: 25%;
+    }
+
+    .sidebar{
+        position: relative;
+        left: 25%;
+    }
+}
+
+@media screen and (min-width:900px) and (max-width:1000px){
+div{
+    width: 30%;
+    margin: 1%;
+}
+.one{
+    float: left;
+}
+.two{
+    float: left;
+}
+.three{
+    float: left;
+}
+.four{
+    clear: left;
+    float: left;
+}
+.five{
+    float: left;
+}
+.six{
+    float: left;
+}
+.seven{
+    clear: left;
+    float: left;
+}
+.eight{
+    float: left;
+}
+
+.sidebar{
+    position: relative;
+    left: 31%;
+}
+}
+
+@media screen and (min-width:1000px)
+{
+    .container{
+        width: 80%;
+        margin-top: 1%;
+    }
+    div{
+        width:30%;
+        margin: 1%;
+    }
+
+    .one{
+        float: left;
+    }
+    .two{
+        float: left;
+    }
+    .three{
+        float: left;
+    }
+    .four{
+        clear: left;
+        float: left;
+    }
+    .five{
+        float: left;
+    }
+    .six{
+        float: left;
+    }
+    .seven{
+        clear: left;
+        float: left;
+    }
+    .eight{
+        float: left;
+    }
+
+    .sidebar{
+        width: 18%;
+        height: 100%;
+        position: absolute;
+        right: 0%;
+        top: 0;
+    }
+    .sidebar p{
+        text-align: left;
+    }
+
+}

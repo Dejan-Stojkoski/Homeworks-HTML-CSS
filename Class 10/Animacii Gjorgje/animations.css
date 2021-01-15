@@ -1,0 +1,121 @@
+body{
+    height: 600px;
+    width: 1000px;
+    position: relative;
+    border: 5px double black;
+}
+.containerOne{
+float: left;
+background: #b03f4c;
+height: 300px;
+width: 500px;
+position: relative;
+}
+.loader{
+    color: white;
+    background: #cc4e5c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+.loader::before{
+    content: '';
+    display: block;
+    background: white;
+    height: 5px;
+    animation: lines 2s ease-in-out infinite;
+    /* Ovde e dodadena vrednosta infinite, a vo ovoj i vo naredniot selektor :after,
+    izbriseni se :hover psevdo elemetite */
+}
+.loader::after{
+    content: '';
+    display: block;
+    background: white;
+    height: 5px;
+    animation: lines 2s ease-in-out infinite;
+}
+
+@keyframes lines{
+    /* Vo ovoj keyframe super si implementiral shto da se slucuva
+    so animacijata so ime lines vo dadenite tocki t.e. 0% i 100% */
+    0%{
+        width: 1px;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/*  SECOND  */
+
+.containerTwo{
+ float: right;
+background: #cc4e5c;
+height: 300px;
+width: 500px;
+position: relative;
+}
+
+.slider{
+    color: white;
+    background: #b03f4c;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    /* Super si pocnal, ovde ke specificirame kalkav da bide slider-ot,
+    jas mu dadov vrednost od 30% */
+    width: 30%;
+
+    /* Samiot slider sakame da animira i toa go pravime so propertito animation.
+    samo animation e skratenata sintaksa. 
+    Najprvo i stavame ime, vremetraenje, kako da se izvrsi, vo koj pravec i dali da e repetativna.
+    animation: second-loading (i dadovme ime) , 4s (vremetraenje), ease-in-out (nachin na izvrsuvanje t.e. da pocne pobrzo a pobavno da zavrshi),
+    forwards (pravec na izvrsuvanje), infinite (beskonechno da se izvrsuva) */
+
+    animation: second-loading 5s ease-in-out  forwards infinite;
+}
+
+/* Kako shto kazav, vo keyframe pisuvame shto da se slucuva so nashata animacija.
+i vikame @keyframe second-loading (imeto na animacijata koeshto e specificiran vo div-ot
+koishto sakame da se animira :), i odredeni tochki shto da se slucuva vo dadeni momenti.
+   */
+@keyframes second-loading {
+    /* Koga animacijata e na startna tochka ili 0% vikame da e so shirochina od 0% */
+    0% {
+        max-width: 0%;
+        background: #fff;
+        }
+        /* Animacijata na 65% da se rashiri maximlano i da dobie opacity */
+    65% {
+         max-width: 100%;
+         opacity: 60%;
+         background: #fff;
+         /* Bukvalno mozeme da si igrame so shto sakame, eve ovde na 65% dodadi nekakov border :) */
+        }
+        /* Animacijata na 100% ili na krajot da go zafati celiot daden prostor so 0% tranparentnost ili opacity */
+    100% {
+         max-width: 100%;
+         opacity: 0%;
+         background: #fff;
+         
+        }
+} 
+
+/* Za narednata animacija kako HINT, trite topcinja da se divovi :). Prvoto i poslednoto topce da imaat animation, za start vo animation
+stavi ime, vremetranje i infinite. vo keyframe-ot na samite animacija ima property transform: rotate(kolko stepeni),
+se pisuva vaka: transform: rotate(180deg) i ima ushte edno properti transform: translate(pikseli/procenti) za pozicioniranje.
+  */
+
+/* Za poslednata animacija ti treba div kako kvadrat koishto ke se ispolnuva (kako vtorata animacija) i topce koisto ke bide do nego,
+i ke ima odreden position, i so pomosh na tockite od keyframes ke go "shetame" :D */
+
+
+
+
+
+
+
+
